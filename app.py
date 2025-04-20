@@ -2,7 +2,7 @@ import streamlit as st
 from model import chat_with_groq
 
 st.set_page_config(page_title="Groq Chatbot", page_icon="🤖")
-st.title("💬 Chat with Groq (LLaMA3)")
+st.title("💬 Chat with AI (LLaMA3)")
 
 if "history" not in st.session_state:
     st.session_state.history = []
