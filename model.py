@@ -1,11 +1,12 @@
 import os
 import requests
 from dotenv import load_dotenv
+import streamlit as st
 
 load_dotenv()
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-GROQ_MODEL = os.getenv("GROQ_MODEL")
+GROQ_API_KEY = st.secret("GROQ_API_KEY")
+GROQ_MODEL = os.secret("GROQ_MODEL")
 
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
